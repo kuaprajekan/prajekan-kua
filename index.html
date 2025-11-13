@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil Resmi KUA Kecamatan Prajekan</title>
+  <style>
+    :root {
+      --primary: #046d5d;
+      --accent: #d43d2f;
+      --bg: #f8fafc;
+      --text: #222;
+      --muted: #666;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary), #05997c);
+      color: #fff;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 26px; font-weight: 600; }
+    header p { margin: 6px 0 0; opacity: 0.9; }
+
+    .container { max-width: 1100px; margin: 20px auto; padding: 0 16px; }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .hero { display: flex; flex-wrap: wrap; gap: 24px; }
+    .hero img { width: 100%; border-radius: 14px 14px 0 0; }
+    .content { padding: 24px; }
+    h2 { color: var(--primary); }
+    a.btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+    a.btn:hover { opacity: 0.9; }
+    .profile { text-align: center; padding: 24px; }
+    .profile img { width: 200px; border-radius: 10px; border: 4px solid #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+    iframe { width: 100%; height: 300px; border: 0; border-radius: 10px; }
+    form { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    footer {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kantor Urusan Agama (KUA) Kecamatan Prajekan</h1>
+    <p>Kementerian Agama Republik Indonesia</p>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <div style="flex:1;min-width:280px">
+        <img src="images/office.jpg" alt="Foto Kantor KUA Prajekan" />
+        <div class="content">
+          <h2>Profil KUA Prajekan</h2>
+          <p>Kantor Urusan Agama (KUA) Kecamatan Prajekan melayani administrasi keagamaan, bimbingan pranikah, pencatatan nikah, serta berbagai layanan keagamaan masyarakat Kecamatan Prajekan, Kabupaten Bondowoso, Jawa Timur.</p>
+          <p><strong>Alamat:</strong><br>Jalan Walidono No. 07 RT. 04 RW. 06, Desa Prajekan Kidul, Kecamatan Prajekan, Kabupaten Bondowoso, Jawa Timur</p>
+          <p><strong>Kontak:</strong><br>Email: <a href="mailto:luxmen519@gmail.com">luxmen519@gmail.com</a><br>HP/WA: <a href="tel:+628123481348">0812-3481-348</a></p>
+          <a class="btn" href="mailto:luxmen519@gmail.com">Kirim Email</a>
+          <a class="btn" style="background:var(--primary);margin-left:8px" href="tel:+628123481348">Telepon Sekarang</a>
+        </div>
+      </div>
+
+      <aside class="card profile" style="flex:0 0 320px">
+        <img src="images/profile.jpg" alt="Kepala KUA Prajekan" />
+        <h2>HM. Lukman Hakim, S.Ag</h2>
+        <p>Kepala KUA Kecamatan Prajekan</p>
+      </aside>
+    </section>
+
+    <section class="card" style="padding:24px">
+      <h2>Galeri Kegiatan</h2>
+      <div class="gallery">
+        <img src="images/jjs.jpg" alt="Jalan-jalan Sehat KUA Prajekan" />
+        <img src="images/kerjabakti.jpg" alt="Kerja Bakti Pegawai KUA Prajekan" />
+        <img src="images/bimbingan.jpg" alt="Bimbingan Pra Nikah" />
+      </div>
+    </section>
+
+    <section class="card" style="padding:24px">
+      <h2>Formulir Kontak / Pendaftaran Online</h2>
+      <p>Silakan isi formulir di bawah ini untuk mengirim pesan atau mendaftar layanan KUA secara online.</p>
+      <form action="mailto:luxmen519@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nama" placeholder="Nama Lengkap" required />
+        <input type="email" name="email" placeholder="Alamat Email" required />
+        <textarea name="pesan" rows="4" placeholder="Tulis pesan atau keperluan Anda..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <section class="card" style="padding:24px">
+      <h2>Lokasi Kantor KUA Prajekan</h2>
+      <p>Berikut peta lokasi kami di Google Maps:</p>
+      <iframe src="https://www.google.com/maps?q=KUA+Prajekan+Bondowoso&output=embed" allowfullscreen></iframe>
+    </section>
+
+    <section class="card" style="padding:24px;text-align:center">
+      <h2>Unduh Profil Resmi KUA Prajekan (PDF)</h2>
+      <p>Anda dapat mengunduh profil resmi KUA Kecamatan Prajekan dalam format PDF untuk kebutuhan dokumentasi atau referensi.</p>
+      <a class="btn" href="profil-kua-prajekan.pdf" download>Unduh Profil PDF</a>
+    </section>
+
+    <section class="card" style="padding:24px;text-align:center">
+      <h2>Tautan Layanan Publik</h2>
+      <p>
+        <a class="btn" style="background:#006d77" href="https://simkah.kemenag.go.id" target="_blank">Sistem Informasi Nikah (SIMKAH)</a>
+        <a class="btn" style="background:#023047;margin-left:8px" href="https://bimasislam.kemenag.go.id" target="_blank">Bimas Islam</a>
+        <a class="btn" style="background:#219ebc;margin-left:8px" href="https://kemenag.go.id" target="_blank">Kementerian Agama RI</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KUA Kecamatan Prajekan — Kementerian Agama Republik Indonesia</p>
+  </footer>
+</body>
+</html>
